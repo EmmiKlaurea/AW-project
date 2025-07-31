@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact page</title>
+    <link rel="stylesheet" href="css web accessibility 3.css"/>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+        <h1>Emmi Tuominen Web Consulting Oy</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="website exercise web accessibility.html">Homepage</a></li>
+                <li><a href="website exercise web accessibility page 2.html">Services</a></li>
+                <li><a href="website exercise web accessibility page 3.html" aria-current="page">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h1>Would you like to have a specialized offer?</h1>
+
+        <div class="content-wrapper"> 
+            <address>
+                <p>If you would like an offer, you can leave us a contact request. I will respond within one business day. Alternatively, you can contact me by phone or email.</p>
+                <p>Phone: <a href="tel:+35810103310" aria-label="Call us at +358 10 10 3310">+358 10 10 3310</a></p>
+                <p>Email: <a href="emmi.tuominen@student.laurea.fi" aria-label="Send email to emmi.tuominen@student.laurea.fi">emmi.tuominen@student.laurea.fi</a></p>
+            </address>
+
+            <section class="contact-form" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Leave a contact request here:</h2>
+                <div class="form-wrapper">
+                    <form action="mailto:sinun.sähköposti@esimerkki.com" method="POST" enctype="text/plain">
+
+                        <label for="name">Name and company:</label>
+                        <input type="text" id="name" name="name" placeholder="e.g. Emmi Tuominen, Web Consulting Oy" aria-describedby="name-help" required />
+                        <small id="name-help">Please enter both your full name and company name.</small>
+
+                        <label for="email">Email address:</label>
+                        <input type="email" id="email" name="email" placeholder="e.g. emmi@example.com" aria-describedby="email-help" required />
+                        <small id="email-help">We will only use your email to contact you about this request.</small>
+
+                        <label for="message">Your message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us briefly about your needs" aria-describedby="message-help" required></textarea>
+                        <small id="message-help">Tell us what kind of website or service you are looking for.</small>
+
+                        <button type="submit">Send message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <h2 class="visually-hidden">Site footer</h2>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="website exercise web accessibility.html">@Emmi Tuominen Web Consulting</a></li>
+                <li><a href="website exercise web accessibility page 4.html">Accessibility statement</a></li>
+                <li><a href="https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr/index_en.htm">Data privacy</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms of use</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
